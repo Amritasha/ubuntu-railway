@@ -9,12 +9,12 @@ Ubuntu Terminal is a browser-accessible Ubuntu 26.04 LTS shell deployed on Railw
 
 ## About Hosting Ubuntu Terminal
 
-Hosting Ubuntu Terminal on Railway means spinning up an Ubuntu 26.04 LTS container with a browser-based terminal exposed via ttyd. Ubuntu 26.04 is a long-term support release, giving you a stable, well-documented environment with the full apt ecosystem at your disposal. Railway handles the build, networking, and SSL automatically. The image ships with commonly used C libraries — libssl-dev, zlib1g-dev, libffi-dev, libsqlite3-dev, libreadline-dev, libncurses-dev, libxml2-dev, libxslt1-dev, libpq-dev, libmysqlclient-dev, libyaml-dev, libpng-dev, libjpeg-dev, and linux-libc-dev — so most language runtimes and native extensions compile without extra setup. A persistent volume is mounted at `/root` so your files survive restarts.
+Hosting Ubuntu Terminal on Railway means spinning up an Ubuntu 26.04 LTS container with a browser-based terminal exposed via ttyd. Ubuntu 26.04 is a long-term support release, giving you a stable, well-documented environment with the full apt ecosystem at your disposal. Railway handles the build, networking, and SSL automatically. The image ships with commonly used C libraries — libssl-dev, zlib1g-dev, libffi-dev, libsqlite3-dev, libreadline-dev, libncurses-dev, libxml2-dev, libxslt1-dev, libpq-dev, default-libmysqlclient-dev, libyaml-dev, libpng-dev, libjpeg-dev, and linux-libc-dev — so most language runtimes and native extensions compile without extra setup. A persistent volume is mounted at `/root` so your files survive restarts.
 
 ## Common Use Cases
 
-- Familiar Ubuntu environment in the cloud accessible from any browser without local setup
-- Building and testing software against Ubuntu LTS — the most common target for Linux deployment
+- Familiar Ubuntu LTS environment in the cloud accessible from any browser without local setup
+- Building and testing software against Ubuntu — the most common Linux deployment target
 - Learning Linux, shell scripting, and system administration in a clean, reproducible environment
 
 ## Dependencies for Ubuntu Terminal Hosting
